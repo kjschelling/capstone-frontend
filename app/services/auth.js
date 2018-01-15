@@ -4,9 +4,11 @@ import { storageFor } from 'ember-local-storage';
 export default Ember.Service.extend({
   ajax: Ember.inject.service(),
   credentials: storageFor('auth'),
+  // checks if the users credientals are present
   isAuthenticated: Ember.computed.bool('credentials.token'),
 
   signUp (credentials) {
+    // making the ajax request to /sign-up
     return this.get('ajax').post('/sign-up', {
       data: {
         credentials: {
@@ -19,6 +21,7 @@ export default Ember.Service.extend({
   },
 
   signIn (credentials) {
+    // making the ajax request to /sign-in
     return this.get('ajax').post('/sign-in', {
       data: {
         credentials: {
@@ -35,7 +38,8 @@ export default Ember.Service.extend({
   },
 
   changePassword (passwords) {
-    return this.get('ajax').patch(`/change-password/${this.get('credentials.id')}`, {
+    // making the ajax request to /change-password
+    return this.get('ajax').patch(`/change-password`, {
       data: {
         passwords: {
           old: passwords.previous,
@@ -46,7 +50,8 @@ export default Ember.Service.extend({
   },
 
   signOut () {
-    return this.get('ajax').del(`/sign-out/${this.get('credentials.id')}`)
+    // making the ajax request to /sign-out
+    return this.get('ajax').del(`/sign-out`)
     .finally(() => this.get('credentials').reset());
   },
 });

@@ -11,6 +11,7 @@ Router.map(function () {
   this.route('change-password');
   this.route('users');
   this.route('ingredients');
+  this.route('ingredient', {path: 'ingredients/:ingredient_id'});
 });
 
 export default Router;

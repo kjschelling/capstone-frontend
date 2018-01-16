@@ -3,3 +3,10 @@
 {{!-- where the ingredient-list goes --}}
 
 <h2>Beauty Ingredients List</h2>
+
+{{#each model as |ingredient|}}
+
+<h3>{{#link-to "ingredient" ingredient}} {{ingredient.name}} {{/link-to}}</h3>
+{{!-- link to the list route using list --}}
+
+{{/each}}

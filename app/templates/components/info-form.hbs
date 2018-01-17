@@ -1,0 +1,6 @@
+<h3> Create a new item</h3>
+<form {{action 'createInfo' ingredient on='submit'}}>
+  {{input placeholder='New Resource' value=newInfo.additionalInfo}}
+  {{!-- value is now bound to the component property --}}
+  <button type='submit'>Save</button>
+</form>

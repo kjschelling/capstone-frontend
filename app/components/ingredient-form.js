@@ -8,8 +8,8 @@ export default Ember.Component.extend({
   actions: {
     createIngredient () {
       this.sendAction('createIngredient', this.get('newIngredient'));
-      this.set('newIngredient.name');
-      this.set('newIngredient.note');
+      // this.set('newIngredient.name');
+      // this.set('newIngredient.note');
     }
     // sending the action up
   }

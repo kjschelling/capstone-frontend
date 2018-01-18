@@ -1,7 +1,8 @@
-
+{{#if auth.isAuthenicated}}
 <form {{action 'createIngredient' on='submit'}}>
   {{input placeholder='New Ingredient Name' value=newIngredient.name}}
   {{input placeholder='New Ingredient Note' value=newIngredient.note}}
   {{!-- value is now bound to the component property --}}
   <button type='submit'>create</button>
 </form>
+{{/if}}

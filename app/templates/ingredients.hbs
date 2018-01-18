@@ -1,6 +1,6 @@
 {{#link-to 'index'}} Go home {{/link-to}}
-
-<h2>Beauty Ingredients List</h2>
+<div class='ingredients'>
+<h1 id='beauty'>Beauty Ingredients List</h1>
 
 {{ingredient-form createIngredient='createIngredient'}}
 
@@ -9,3 +9,5 @@
 <h3>{{#link-to "ingredient" ingredient}} {{ingredient.name}} {{/link-to}}</h3>
 
 {{/each}}
+
+</div>

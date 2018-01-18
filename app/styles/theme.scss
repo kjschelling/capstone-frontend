@@ -1,0 +1,38 @@
+// .navbar {
+// background-color: $pink;
+// }
+
+#beauty {
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+.navbar-brand {
+  font-family: Courier;
+}
+
+.nav, form , ul {
+  font-family: Courier;
+}
+
+.ingredient-name {
+  font-family: Courier;
+  font-weight: bold;
+} //found in ingredient.hbs
+
+.ingredient-note {
+  font-family: Courier;
+} //found in ingredient.hbs
+
+.ingredients {
+  font-family: Courier;
+}
+
+#navbar {
+  background-color: $pink;
+} // id found in my-application
+
+.info-list {
+  background-color: lighten($blue, 10%);
+  padding: 20px;
+} //div around ingredient-list component in ingredient.hbs

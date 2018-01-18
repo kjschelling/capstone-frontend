@@ -4,8 +4,6 @@
 <ul>
   {{info-form createInfo='createInfo' ingredient=ingredient value=newInfo.additionalInfo}}
 
-    {{log ingredient}}
-
   {{#each ingredient.infos as |info|}}
     {{ingredient-list/info info=info}}
     {{!-- info=info is passing in info allowing it to access info--}}

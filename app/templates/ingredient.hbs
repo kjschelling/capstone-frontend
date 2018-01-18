@@ -1,6 +1,6 @@
 {{#link-to 'ingredients'}} Back to ingredients {{/link-to}}
 
-<h3>{{model.name}}</h3>
-<h4>{{model.note}}</h4>
+<h1 class='ingredient-name'>{{model.name}}</h1>
+<h3 class='ingredient-note'>{{model.note}}</h3>
 
-{{ingredient-list ingredient=model createInfo='createInfo'}}
+<div class='info-list'>{{ingredient-list ingredient=model createInfo='createInfo'}}</div>

@@ -12,5 +12,8 @@ export default Ember.Component.extend({
       updateInfo (info) {
         this.sendAction('updateInfo', info)
     }
+      // deleteIngredient(ingredient) {
+      //   this.sendAction('deleteIngredient', ingredient)
+      // }
   }
 });

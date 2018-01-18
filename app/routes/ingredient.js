@@ -16,6 +16,10 @@ export default Ember.Route.extend({
     updateInfo(info) {
         info.save();
         // need to build the object, right now only passing a string
+      },
+      deleteIngredient(ingredient) {
+        ingredient.deleteRecord();
+        this.transitionTo('ingredients');
       }
     }
 });

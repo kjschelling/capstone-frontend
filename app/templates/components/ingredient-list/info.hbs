@@ -2,4 +2,5 @@
 
 <span class="ingredient-info">{{info.additionalInfo}}</span>
 <button {{action 'deleteInfo' info}}>delete</button>
-{{!-- do I need to add createInfo='createInfo' here? --}}
+{{info-form-edit updateInfo='updateInfo' info=info value=info.additionalInfo}}
+{{!-- get it to only show when there are info items present --}}

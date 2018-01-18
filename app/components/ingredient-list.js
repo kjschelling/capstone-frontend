@@ -5,9 +5,12 @@ export default Ember.Component.extend({
       createInfo (newInfo) {
         this.sendAction('createInfo', newInfo);
       },
-        deleteInfo (info) {
-        return this.sendAction('deleteInfo', info) // passes this to the next up component
+      deleteInfo (info) {
+        this.sendAction('deleteInfo', info) // passes this to the next up component
         // ingredient
-      }
+      },
+      updateInfo (info) {
+        this.sendAction('updateInfo', info)
     }
+  }
 });

@@ -1,1 +1,7 @@
-{{yield}}
+<form {{action 'updateInfo' on='submit'}}>
+  {{!-- the list after the updateList function is the way we pass in the list --}}
+  {{input placeholder='Update additional info' value=info.additionalInfo }}
+  {{!-- value = something is automatically binding to the .js  --}}
+  {{!-- value is now bound to the component property --}}
+  <button type='submit'>update</button>
+</form>

@@ -11,7 +11,11 @@ export default Ember.Route.extend({
     },//actions are saved at the route so createInfo.js was passed up from info.js
     //to be saved here in routes/ingredient.js
     deleteInfo(info) {
-        info.destroyRecord(info);
+        info.destroyRecord();
+    },
+    updateInfo(info) {
+        info.save();
+        // need to build the object, right now only passing a string
+      }
     }
-  }
 });

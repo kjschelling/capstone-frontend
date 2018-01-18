@@ -52,7 +52,7 @@ module.exports = function (environment) {
   if (environment === 'production') {
   ENV.rootURL = '/kjschelling-capstone';
   ENV.locationType = 'hash';
-  ENV.apiHost = 'https://git.heroku.com/kjschelling-capstone.git';
+  ENV.apiHost = 'https://kjschelling-capstone.herokuapp.com/';
 }
   return ENV;
 };

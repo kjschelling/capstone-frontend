@@ -9,8 +9,7 @@ export default Ember.Component.extend({
       createInfo (ingredient) {
       this.set('newInfo.ingredient', ingredient);
        this.sendAction('createInfo', this.get('newInfo'));
-
-
+       this.set('newInfo.additionalInfo', null);
       // console.log(this.get('newInfo'))
        //from that creates a new info item
       }

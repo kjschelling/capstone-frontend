@@ -36,3 +36,15 @@
   background-color: lighten($blue, 10%);
   padding: 20px;
 } //div around ingredient-list component in ingredient.hbs
+
+.welcome {
+  font-size: 70px;
+  font-family: Courier;
+  text-align: center;
+  padding: 20px;
+}
+
+.welcome-header {
+  font-family: Courier;
+  text-align: center;
+}

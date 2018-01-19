@@ -1,9 +1,9 @@
 
 
-
-
 <ul>
+
   {{info-form createInfo='createInfo' ingredient=ingredient value=newInfo.additionalInfo}}
+
 
   {{#each ingredient.infos as |info|}}
     {{ingredient-list/info info=info deleteInfo='deleteInfo' updateInfo='updateInfo'}}

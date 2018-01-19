@@ -1,6 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
+auth: Ember.inject.service(),
   model () { //this is a model hook
     return this.get('store').findAll('ingredient') // findAll makes a GET request to /ingredients
   },

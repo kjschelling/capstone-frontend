@@ -3,8 +3,9 @@
 <h1 class='ingredient-name'>{{model.name}}</h1>
 
 <h3 class='ingredient-note'>{{model.note}}</h3>
-{{#if ingredient.editable}}
-<button {{action 'deleteIngredient' model}}>delete</button>
-{{/if}}
 
-<div class='info-list'>{{ingredient-list ingredient=model createInfo='createInfo' deleteInfo='deleteInfo' updateInfo='updateInfo'}}</div>
+
+<button {{action 'deleteIngredient' model}}>delete</button>
+
+
+<div class='info-list'>{{ingredient-list ingredient=model  createInfo='createInfo' deleteInfo='deleteInfo' updateInfo='updateInfo'}}</div>

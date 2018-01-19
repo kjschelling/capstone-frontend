@@ -19,6 +19,7 @@ export default Ember.Route.extend({
       },
       deleteIngredient(ingredient) {
         ingredient.deleteRecord();
+        ingredient.save();
         this.transitionTo('ingredients');
       }
     }

@@ -20,7 +20,7 @@ Technologies used:
 -Rails
 -Ember.js
 -Heroku
--CSS and Sass
+-CSSgit push  and Sass
 -HTML
 
 App Screenshot:

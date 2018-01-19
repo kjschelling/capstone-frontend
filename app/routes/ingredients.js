@@ -8,7 +8,12 @@ auth: Ember.inject.service(),
   actions: {
     createIngredient(ingredient) {
       let newIngredient = this.get('store').createRecord('ingredient', ingredient);
-      newIngredient.save();
-    }
+      newIngredient.save()
+      .then(() => this.get('flashMessages').success('Ingredient created!'))
+      .catch(() => {
+        this.get('flashMessages')
+        .danger('Error creating ingredient.');
+    });
   }
+}
 });

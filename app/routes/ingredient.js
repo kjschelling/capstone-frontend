@@ -7,11 +7,19 @@ export default Ember.Route.extend({
   actions: {
     createInfo(info) {
       let newInfo = this.get('store').createRecord('info', info);
-      newInfo.save();
-    },//actions are saved at the route so createInfo.js was passed up from info.js
-    //to be saved here in routes/ingredient.js
+        newInfo.save()
+          .then(() => this.get('flashMessages').success('Additional info created!'))
+          .catch(() => {
+              this.get('flashMessages').danger('Error creating info!');
+      });
+    },
     deleteInfo(info) {
-        info.destroyRecord();
+        info.deleteRecord();
+        info.save()
+          .then(() => this.get('flashMessages').success('Additional info deleted!'))
+          .catch(() => {
+            this.get('flashMessages').danger('Additonal info not deleted.');
+       });
     },
     updateInfo(info) {
         info.save();

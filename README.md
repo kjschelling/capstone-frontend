@@ -1,5 +1,11 @@
-Front end Capstone
-Welcome to my Cosemetic Ingredient Site.
+
+Welcome to my Cosemetic Ingredient Site - Frontend Capstone 
+
+Deployed frontend:https://kjschelling.github.io/kjschelling-capstone/
+Deployed backend:https://kjschelling-capstone.herokuapp.com/
+
+Frontend repository:https://github.com/kjschelling/kjschelling-capstone
+Backend repository:https://github.com/kjschelling/Capstone-backend
 
 This site allows the user to log in, add an ingredient they want to know more
 about and add links and notes desribing what it's used for, research paper links,
@@ -17,11 +23,15 @@ User Stories:
 
 
 Technologies used:
--Rails
--Ember.js
--Heroku
--CSSgit push  and Sass
--HTML
+
+- Ember.js
+- Heroku
+- CSS 
+- Sass
+- HTML
+- Ruby 
+- Bootstrap
+- Ruby on Rails
 
 App Screenshot:
 https://imgur.com/gallery/NzAm8
@@ -44,12 +54,6 @@ before I moved to the front end to set up the resource and get it to show and cr
 - next I created the second resource in the backend then moved to the front end to finish
 all the crud functions for all the resources
 -then added finishing touches.
-
-Frontend repo:https://github.com/kjschelling/kjschelling-capstone
-Backend repo:https://github.com/kjschelling/Capstone-backend
-
-Deployed frontend:https://kjschelling.github.io/kjschelling-capstone/
-Deployed backend:https://kjschelling-capstone.herokuapp.com/
 
 
 Created by KJ Schelling - Full Stack Dev, Skincare Freak, Fashionista

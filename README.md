@@ -1,11 +1,15 @@
 
 Welcome to my Cosemetic Ingredient Site - Frontend Capstone 
 
+_____________________________________
+
 Deployed frontend:https://kjschelling.github.io/kjschelling-capstone/
 Deployed backend:https://kjschelling-capstone.herokuapp.com/
 
 Frontend repository:https://github.com/kjschelling/kjschelling-capstone
 Backend repository:https://github.com/kjschelling/Capstone-backend
+
+_____________________________________
 
 This site allows the user to log in, add an ingredient they want to know more
 about and add links and notes desribing what it's used for, research paper links,
